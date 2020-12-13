@@ -1,0 +1,40 @@
+/* Light */
+.intro-container {
+    width: 343px;
+    height: 245px;
+    padding: 20px;
+
+    /* System Background / Light / Primary */
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
+}
+
+/* Light / Notification Action / Single */
+.xbtn {
+
+    width: 321px;
+    /*height: 52px;*/
+    margin-bottom: 3px;
+    align-content: center;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.6), rgba(245, 245, 245, 0.6));
+
+    /* Large (Default) / Title 3 */
+    font-family: SF Pro Display, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    /* or 120% */
+    text-align: center;
+    letter-spacing: 0.38px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* Label Color / Light / Primary */
+    color: #000000
+}
+
+.xbtn:hover {
+        background: linear-gradient(0deg, rgba(232, 232, 232, 0.6), rgba(228, 228, 228, 0.6));
+}
