@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/logic.js"></script>
     <title>UX 'Research'</title>
 </head>
 <body>
-<div id="how-old" class="intro-container">
+<div id="intro" class="intro-container" hidden>
     <div class="xbtn">Action</div>
-    <div class="xbtn" onclick="transitChooseAge()">Birthdate</div>
+    <div class="xbtn" onclick="transit('#how-old')">Birthdate</div>
     <div class="xbtn">Action</div>
     <div class="xbtn">Action</div>
+</div>
+<div id="how-old" class="how-old-container">
+    <div class="back-btn" onclick="transit('#intro')">< Back</div>
+    <div id="age" class="how-old-result">How old are you?</div>
+    <div id="num" class="num-text" hidden>1</div>
+    <img id="delete-btn" class="delete-btn" src="assets/img/delete-img.png" hidden/>
+    <div id="numbers" class="numbers-container">
+
+    </div>
+</div>
+<div id="months" class="how-old-container">
 </div>
 </body>
 </html>
