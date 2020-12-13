@@ -8,22 +8,46 @@
     <title>UX 'Research'</title>
 </head>
 <body>
-<div id="intro" class="intro-container" hidden>
-    <div class="xbtn">Action</div>
-    <div class="xbtn" onclick="transit('#how-old')">Birthdate</div>
-    <div class="xbtn">Action</div>
-    <div class="xbtn">Action</div>
-</div>
-<div id="how-old" class="how-old-container">
-    <div class="back-btn" onclick="transit('#intro')">< Back</div>
-    <div id="age" class="how-old-result">How old are you?</div>
-    <div id="num" class="num-text" hidden>1</div>
-    <img id="delete-btn" class="delete-btn" src="assets/img/delete-img.png" hidden/>
-    <div id="numbers" class="numbers-container">
-
+<div class="common-container">
+    <h3 class="timing" hidden>
+    </h3>
+    <div id="intro" class="intro-container">
+        <div class="xbtn">Action</div>
+        <div class="xbtn" onclick="transit('#how-old')">Birthdate</div>
+        <div class="xbtn">Action</div>
+        <div class="xbtn">Action</div>
     </div>
-</div>
-<div id="months" class="how-old-container">
+    <div id="how-old" class="how-old-container" hidden>
+        <div class="top-btns">
+            <div class="back-btn" onclick="transit('#intro')">< Back</div>
+            <div id="done-age" class="done-btn" onclick="selectAgeDigit(-100)" hidden>Done ></div>
+        </div>
+        <div id="age" class="how-old-result">How old are you?</div>
+        <div id="num" class="num-text" hidden>1</div>
+        <img id="delete-btn" class="delete-btn" src="assets/img/delete-img.png" hidden/>
+        <div id="numbers" class="numbers-container">
+
+        </div>
+    </div>
+    <div id="months" class="how-old-container" hidden>
+        <div id="m-num" class="num-text-m" hidden>1</div>
+        <div id="months-container" class="numbers-container">
+
+        </div>
+    </div>
+    <div id="days" class="how-old-container" hidden>
+        <div id="d-num" class="num-text-d" hidden>1</div>
+        <div id="days-container" class="numbers-container-d">
+
+        </div>
+    </div>
+    <div id="final" class="intro-container" hidden>
+        <div class="xbtn">Action</div>
+        <div id="final-result" class="xbtn">sas</div>
+        <div class="xbtn">Action</div>
+        <div class="xbtn">Action</div>
+        <div id="again" class="xbtn-x" onclick="location.reload()">Again</div>
+    </div>
 </div>
 </body>
 </html>
