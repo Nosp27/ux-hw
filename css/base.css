@@ -1,8 +1,19 @@
 /* Light */
-.common-container{
+.common-container {
     position: absolute;
     left: 30%;
     top: 15%;
+}
+
+.home-container {
+    display: flex;
+    flex-flow: column;
+    padding: 30px;
+
+    /* System Background / Light / Primary */
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
 }
 
 .intro-container {
@@ -66,6 +77,7 @@
 .xbtn:hover {
     background: linear-gradient(0deg, rgba(232, 232, 232, 0.6), rgba(228, 228, 228, 0.6));
 }
+
 .xbtn-x:hover {
     background: linear-gradient(0deg, rgba(180, 180, 180, 0.6), rgba(180, 180, 180, 0.6));
 }

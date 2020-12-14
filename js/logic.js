@@ -155,6 +155,8 @@ function prepareFinal() {
     y.setFullYear(new Date().getFullYear() - a);
     const year = y.getFullYear();
     $('#final-result').text(`${day} ${month} ${year}`);
-    $('.timing').show().text(`Your time is: ${(Date.now() - startTime) / 1000}s`);
+    const timeSpent = (Date.now() - startTime) / 1000;
+    $('.timing').show().text(`Your time is: ${timeSpent}s`);
+    console.log(timeSpent);
     $('#again').show();
 }
