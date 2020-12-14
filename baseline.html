@@ -9,17 +9,24 @@
     <title>Baseline</title>
 </head>
 <body>
+<div>
+    <ul id="years-popup" hidden>
+        <li id="year-template" class="year" hidden>1999</li>
+    </ul>
+</div>
 <div class="base-container">
     <div class="datepicker-container">
         <div id="top-row" class="top-btns">
-            <div id="year-and-month">June 2020 <span class="blu-text">></span></div>
+            <div id="year-and-month" onclick="showYears()">
+                <span id="year-and-month-content">June 2020</span> <span class="blu-text">></span>
+            </div>
             <div class="top-btns">
-                <div class="blu-text"><</div>
+                <div class="blu-text" onclick="prevMonth()"><</div>
                 <span style="color: white">__</span>
-                <div class="blu-text">></div>
+                <div class="blu-text" onclick="nextMonth()">></div>
             </div>
         </div>
-        <p id="num" hidden>1</p>
+        <div id="num" class="day-num" hidden>1</div>
         <table id="month-days" class="month-days">
             <tr id="num-row" hidden></tr>
             <td id="cell"></td>
@@ -33,9 +40,12 @@
                 <th class="weekday">SAT</th>
             </tr>
         </table>
-        <div id="time-row">
-
-        </div>
+        <div id="select" onclick="finalize()" hidden>Select ></div>
+    </div>
+    <div id="final" class="intro-container" hidden>
+        <div id="final-res" class="blu-text"></div>
+        <div id="final-timing" class="blu-text"></div>
+        <div id="again" class="xbtn-x" onclick="location.reload()">Again</div>
     </div>
 </div>
 </body>

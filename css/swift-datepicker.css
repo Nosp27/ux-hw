@@ -6,6 +6,8 @@
 }
 
 .base-container {
+    margin-left: 30%;
+    margin-top: 15%;
     width: 343px;
     height: 245px;
     padding: 20px;
@@ -21,33 +23,64 @@
     font-weight: bolder;
 }
 
-.month-days {
-    width: 100%;
-    height: 100%;
-}
-
-/* Light / Notification Action / Single */
-.xbtn {
-    width: 321px;
+.year {
+    list-style-type: none;
     /*height: 52px;*/
     margin-bottom: 3px;
-    align-content: center;
     background: linear-gradient(0deg, rgba(245, 245, 245, 0.6), rgba(245, 245, 245, 0.6));
 
     /* Large (Default) / Title 3 */
     font-family: SF Pro Display, serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 24px;
     /* or 120% */
     text-align: center;
     letter-spacing: 0.38px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 
     /* Label Color / Light / Primary */
     color: #000000
+}
+
+/* Light / Notification Action / Single */
+.year:hover {
+    background: linear-gradient(0deg, rgba(225, 225, 225, 0.6), rgba(225, 225, 225, 0.6));
+}
+
+#years-popup {
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    width: 180px;
+    height: 200px;
+    padding-right: 20px;
+    overflow: scroll;
+
+    /* System Background / Light / Primary */
+    background: #FFFFFF;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 13px;
+}
+
+.month-days {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.day-num {
+    margin: 5px 10px;
+}
+
+tr {
+    height: 10px;
+
+}
+
+th, td {
+    text-align: center;
 }
 
 .xbtn-x {
